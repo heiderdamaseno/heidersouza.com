@@ -13,7 +13,7 @@
 <meta property="og:image" content="https://heidersouza.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"Heider Souza","url":"https://heidersouza.com/","email":"heider@heidersouza.com","image":"https://heidersouza.com/og-image.png",
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Heider Souza","url":"https://heidersouza.com/","email":"heider@heidersouza.com","image":"https://heidersouza.com/heider-souza.jpg",
 "description":"Agile transformation, digitalization and migration for large enterprises: Jira, Azure DevOps, GitHub, SAP and mainframe.",
 "founder":{"@type":"Person","name":"Heider Souza","jobTitle":"Agile transformation and migration consultant","sameAs":["https://www.linkedin.com/in/heider-souza-65bba239/"],
 "hasCredential":["PMI-ACP","SAFe Program Consultant (SPC4)","SAFe 5 POPM","Jira Administrator"]},
@@ -108,6 +108,8 @@ section { padding-block: 64px; border-bottom: 1px solid var(--line); display: gr
 .cases { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .case { background: var(--accent-soft); border-radius: 6px; padding: 22px; display: grid; gap: 8px; align-content: start; }
 .case p { font-size: 0.95rem; }
+.intro { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 32px; align-items: start; }
+.portrait { width: 200px; height: 250px; object-fit: cover; border-radius: 6px; border: 1px solid var(--line); display: block; }
 .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
 .stats div { display: grid; gap: 6px; align-content: start; border-top: 1px solid var(--line); padding-top: 12px; }
 .stats .num { font-family: var(--display); font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; color: var(--accent); line-height: 1; font-variant-numeric: tabular-nums; }
@@ -125,6 +127,8 @@ footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
 @media (max-width: 760px) {
   .areas, .packages, .industries, .trust, .cases { grid-template-columns: minmax(0, 1fr); }
   .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .intro { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .portrait { width: 160px; height: 200px; }
   .industries { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   section { padding-block: 48px; }
 }
@@ -164,8 +168,13 @@ footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
 
   <section id="about">
     <span class="label">About me</span>
-    <h2>Mainframe operator, then project manager, then transformation lead</h2>
-    <p>I started on the mainframe and grew into leading teams and guiding the transformation and digitalization of entire enterprises. Because I know both the oldest and the newest systems, I can connect the people who run them.</p>
+    <div class="intro">
+      <img class="portrait" src="heider-souza.jpg" width="200" height="250" alt="Heider Souza" loading="lazy">
+      <div>
+        <h2>Mainframe operator, then project manager, then transformation lead</h2>
+        <p>I started on the mainframe and grew into leading teams and guiding the transformation and digitalization of entire enterprises. Because I know both the oldest and the newest systems, I can connect the people who run them.</p>
+      </div>
+    </div>
     <div class="stats">
       <div><span class="num">2,000</span><p>people trained in Agile ways of working and Jira</p></div>
       <div><span class="num">200+</span><p>projects migrated from Jira Data Center to Cloud</p></div>
