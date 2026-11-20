@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heider Souza | Agile transformation, digitalization and migration</title>
+<meta name="description" content="Heider Souza helps Fortune 500 companies with Agile transformation, digitalization and migration across Jira, Azure DevOps, GitHub, SAP and mainframe.">
+<meta property="og:title" content="Heider Souza | Agile transformation, digitalization and migration">
+<meta property="og:description" content="From the mainframe to the cloud. 2,000 people trained, 200+ projects moved to Jira Cloud.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://heidersouza.com/">
+<meta property="og:url" content="https://heidersouza.com/">
+<meta property="og:image" content="https://heidersouza.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Heider Souza","url":"https://heidersouza.com/","email":"heider@heidersouza.com","image":"https://heidersouza.com/og-image.png",
+"description":"Agile transformation, digitalization and migration for large enterprises: Jira, Azure DevOps, GitHub, SAP and mainframe.",
+"founder":{"@type":"Person","name":"Heider Souza","jobTitle":"Agile transformation and migration consultant","sameAs":["https://www.linkedin.com/in/heider-souza-65bba239/"],
+"hasCredential":["PMI-ACP","SAFe Program Consultant (SPC4)","SAFe 5 POPM","Jira Administrator"]},
+"knowsAbout":["Agile transformation","SAFe","Jira","Jira Cloud migration","Azure DevOps","GitHub","SAP","Mainframe","ServiceNow integration"],
+"sameAs":["https://www.linkedin.com/in/heider-souza-65bba239/"]}
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b6e55'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' text-anchor='middle' fill='white'%3EHS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one calm column; a single "migration line" runs from mainframe to cloud as the page's one visual idea. */
+:root {
+  --bg: #f4f6f5;
+  --surface: #ffffff;
+  --ink: #13211d;
+  --muted: #55655f;
+  --line: #d5ddd9;
+  --accent: #0b6e55;
+  --accent-soft: #e2f0eb;
+  --signal: #b8691a;
+  --display: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1614; --surface: #16201d; --ink: #e6eeeb; --muted: #9db0a9; --line: #2a3833;
+    --accent: #4cc39f; --accent-soft: #173029; --signal: #e3a35c; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1614; --surface: #16201d; --ink: #e6eeeb; --muted: #9db0a9; --line: #2a3833;
+  --accent: #4cc39f; --accent-soft: #173029; --signal: #e3a35c; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+img { max-width: 100%; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 980px; margin: 0 auto; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.1; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2.4rem, 6vw, 4rem); font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); font-weight: 600; }
+h3 { font-size: 1.25rem; font-weight: 600; }
+p { margin: 0; max-width: 65ch; }
+.label { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+header.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 22px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.brand { font-family: var(--display); font-weight: 700; font-size: 1.2rem; }
+nav { display: flex; gap: 20px; flex-wrap: wrap; font-size: 0.95rem; }
+nav a { color: var(--ink); text-decoration: none; }
+nav a:hover { color: var(--accent); }
+
+section { padding-block: 64px; border-bottom: 1px solid var(--line); display: grid; gap: 28px; }
+.hero { padding-block: 72px 56px; }
+.hero p.lead { font-size: 1.2rem; color: var(--muted); }
+.btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn { display: inline-block; padding: 12px 20px; border-radius: 4px; font-weight: 600; text-decoration: none; border: 1px solid var(--accent); }
+.btn.primary { background: var(--accent); color: var(--bg); }
+.btn.ghost { color: var(--accent); }
+
+/* the migration line */
+.path { display: flex; align-items: center; gap: 0; overflow-x: auto; padding-block: 8px; }
+.stop { display: grid; gap: 6px; justify-items: center; min-width: 96px; text-align: center; }
+.dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--accent); background: var(--bg); }
+.stop:first-child .dot { background: var(--signal); border-color: var(--signal); }
+.stop:last-child .dot { background: var(--accent); }
+.stop span { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
+.seg { flex: 1; min-width: 28px; height: 2px; background: var(--line); margin-bottom: 26px; }
+
+.areas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.area { display: grid; gap: 10px; align-content: start; border-top: 3px solid var(--accent); padding-top: 16px; }
+.area p { color: var(--muted); font-size: 0.98rem; }
+
+.stack { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip { font-family: var(--mono); font-size: 0.88rem; padding: 6px 12px; border: 1px solid var(--line); border-radius: 3px; background: var(--surface); }
+
+.industries { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.ind { background: var(--surface); padding: 18px; font-weight: 500; }
+
+.packages { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.pkg { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 22px; display: grid; gap: 12px; align-content: start; }
+.pkg ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 0.95rem; display: grid; gap: 4px; }
+.pkg .price { font-family: var(--mono); font-size: 0.85rem; color: var(--signal); }
+
+.cases { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.case { background: var(--accent-soft); border-radius: 6px; padding: 22px; display: grid; gap: 8px; align-content: start; }
+.case p { font-size: 0.95rem; }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.stats div { display: grid; gap: 6px; align-content: start; border-top: 1px solid var(--line); padding-top: 12px; }
+.stats .num { font-family: var(--display); font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; color: var(--accent); line-height: 1; font-variant-numeric: tabular-nums; }
+.stats p { color: var(--muted); font-size: 0.92rem; }
+
+.trust { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 32px; }
+.trust div { display: grid; gap: 4px; }
+.trust p { color: var(--muted); font-size: 0.95rem; }
+
+.contact { display: grid; gap: 16px; }
+.addr { font-family: var(--mono); font-size: 1.05rem; padding: 12px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; display: inline-flex; gap: 12px; align-items: center; flex-wrap: wrap; user-select: all; }
+.addr button { font: inherit; font-size: 0.85rem; border: 1px solid var(--accent); color: var(--accent); background: transparent; border-radius: 3px; padding: 4px 10px; cursor: pointer; user-select: none; }
+footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
+
+@media (max-width: 760px) {
+  .areas, .packages, .industries, .trust, .cases { grid-template-columns: minmax(0, 1fr); }
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .industries { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  section { padding-block: 48px; }
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand">Heider Souza</div>
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#how">How I work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="label">Agile transformation · Digitalization · Migration</span>
+    <h1>From the mainframe to the cloud. I have worked at both ends.</h1>
+    <p class="lead">I help large companies change how they work and move their tools without losing data, history or momentum. I have trained 2,000 people in Agile and Jira and moved more than 200 projects to the cloud, for Fortune 500 companies.</p>
+    <div class="path" aria-label="A typical migration path">
+      <div class="stop"><div class="dot"></div><span>Mainframe</span></div><div class="seg"></div>
+      <div class="stop"><div class="dot"></div><span>SAP</span></div><div class="seg"></div>
+      <div class="stop"><div class="dot"></div><span>Jira</span></div><div class="seg"></div>
+      <div class="stop"><div class="dot"></div><span>Azure DevOps</span></div><div class="seg"></div>
+      <div class="stop"><div class="dot"></div><span>GitHub</span></div><div class="seg"></div>
+      <div class="stop"><div class="dot"></div><span>Cloud</span></div>
+    </div>
+    <div class="btns">
+      <a class="btn primary" href="#contact">Book a 30-minute call</a>
+      <a class="btn ghost" href="#packages">See packages</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <span class="label">About me</span>
+    <h2>Mainframe operator, then project manager, then transformation lead</h2>
+    <p>I started on the mainframe and grew into leading teams and guiding the transformation and digitalization of entire enterprises. Because I know both the oldest and the newest systems, I can connect the people who run them.</p>
+    <div class="stats">
+      <div><span class="num">2,000</span><p>people trained in Agile ways of working and Jira</p></div>
+      <div><span class="num">200+</span><p>projects migrated from Jira Data Center to Cloud</p></div>
+      <div><span class="num">3,000+</span><p>Jira users on automation and audit I designed, with two-way Jira and ServiceNow updates</p></div>
+      <div><span class="num">1 → 5+</span><p>teams at Red Hat certification training, grown to 100+ people with Agile ways of working</p></div>
+    </div>
+    <div class="stack">
+      <span class="chip">PMI Agile Certified Practitioner (PMI-ACP)</span>
+      <span class="chip">SAFe Program Consultant (SPC4)</span>
+      <span class="chip">SAFe 5 Product Owner / Product Manager (POPM)</span>
+      <span class="chip">Jira Administrator</span>
+      <span class="chip">MBA, finishing</span>
+    </div>
+    <a href="https://www.linkedin.com/in/heider-souza-65bba239/" target="_blank" rel="noopener">See my full profile on LinkedIn</a>
+  </section>
+
+  <section id="services">
+    <span class="label">What I do</span>
+    <div class="areas">
+      <div class="area">
+        <h3>Agile transformation</h3>
+        <p>Set up teams, boards, workflows and reporting that people actually use. Coaching for leads and product owners during the change.</p>
+      </div>
+      <div class="area">
+        <h3>Digitalization</h3>
+        <p>Replace manual steps, spreadsheets and email chains with automation, integrations and clear dashboards.</p>
+      </div>
+      <div class="area">
+        <h3>Migration</h3>
+        <p>Move and consolidate spaces, projects and tools: Jira Server and Data Center to Cloud, space mergers, and links between Jira, Azure DevOps, GitHub and ServiceNow.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">Tools I work in</span>
+    <div class="stack">
+      <span class="chip">Jira Cloud &amp; Data Center</span>
+      <span class="chip">Jira Automation</span>
+      <span class="chip">Confluence</span>
+      <span class="chip">Azure DevOps</span>
+      <span class="chip">GitHub</span>
+      <span class="chip">SAP</span>
+      <span class="chip">ServiceNow</span>
+      <span class="chip">Mainframe (z/OS)</span>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">Industries</span>
+    <h2>Fortune 500 experience across six sectors</h2>
+    <div class="industries">
+      <div class="ind">Chemicals</div>
+      <div class="ind">Software</div>
+      <div class="ind">Automotive &amp; trucks</div>
+      <div class="ind">Agriculture &amp; life sciences</div>
+      <div class="ind">Engines &amp; energy</div>
+      <div class="ind">Banking &amp; fintech</div>
+    </div>
+    <p style="color:var(--muted);font-size:0.92rem">Most client names are kept confidential. References are available on request.</p>
+  </section>
+
+  <section id="packages">
+    <span class="label">Packages</span>
+    <h2>Fixed scope, fixed price</h2>
+    <div class="packages">
+      <div class="pkg">
+        <h3>Jira automation health check</h3>
+        <ul>
+          <li>Review of every automation rule in a space</li>
+          <li>Rules that loop, run late or overwrite each other</li>
+          <li>Written report with fixes in order of risk</li>
+        </ul>
+      </div>
+      <div class="pkg">
+        <h3>Space migration &amp; consolidation</h3>
+        <ul>
+          <li>Map of work types, workflows and statuses</li>
+          <li>Migration plan signed off by the team</li>
+          <li>Move with restore points and a final check</li>
+        </ul>
+      </div>
+      <div class="pkg">
+        <h3>Agile setup for a team</h3>
+        <ul>
+          <li>Boards, workflows and roles that fit how you work</li>
+          <li>Sprint and delivery forecasting</li>
+          <li>Hand-over training for your leads</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">Case stories</span>
+    <div class="cases">
+      <div class="case">
+        <span class="label">CA Technologies</span>
+        <h3>SAFe on the mainframe</h3>
+        <p>Guided the adoption of SAFe in a mainframe environment, improving innovation and time to market.</p>
+      </div>
+      <div class="case">
+        <span class="label">Red Hat</span>
+        <h3>Agile for certification courses</h3>
+        <p>Brought Agile ways of working, from scratch, to the teams building Red Hat's technical certification courses, such as Ansible. We grew from one team to 5+ teams and 100+ people, and from one project manager to 5+ project managers and Agile coaches. Along the way we built Red Hat's internal tools for developing courses.</p>
+      </div>
+      <div class="case">
+        <span class="label">Fortune 500 enterprise</span>
+        <h3>Jira at scale, with ServiceNow</h3>
+        <p>Designed automation and structure for 3,000+ Jira users with two-way ServiceNow updates, and built my own tooling that cut routine admin work by more than half.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <span class="label">How I work</span>
+    <h2>Your access, handled carefully</h2>
+    <div class="trust">
+      <div><h3>Least access</h3><p>I ask only for the permissions a task needs, and for as long as it needs them.</p></div>
+      <div><h3>Restore points</h3><p>Every change is backed up first and can be undone.</p></div>
+      <div><h3>Your data stays yours</h3><p>Nothing is copied outside your systems unless you agree in writing.</p></div>
+      <div><h3>Plain reporting</h3><p>You get a clear written record of what changed, when and why.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <span class="label">Contact</span>
+    <h2>Start with a 30-minute call</h2>
+    <p>Tell me what you want to change or move. I will tell you honestly whether I can help and what it would take.</p>
+    <div class="addr"><a id="mail" href="mailto:heider@heidersouza.com">heider@heidersouza.com</a><button id="copy" type="button">Copy</button></div>
+  </section>
+
+  <footer>© 2026 Heider Souza · <a href="https://www.linkedin.com/in/heider-souza-65bba239/" target="_blank" rel="noopener">LinkedIn</a></footer>
+</div>
+
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var t = document.getElementById('mail').textContent, b = this;
+  try {
+    navigator.clipboard.writeText(t).then(function () { b.textContent = 'Copied'; }, function () { b.textContent = 'Select and copy'; });
+  } catch (e) { b.textContent = 'Select and copy'; }
+});
+</script>
+</body>
+</html>
