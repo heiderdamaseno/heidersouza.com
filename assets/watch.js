@@ -10,7 +10,7 @@
     var state = {}, timer = null, i = 0, waiting = null;
     box.textContent = '';
     var head = el('div', 'watch-head');
-    var who = el('span'); who.append('Migration Watch · '); who.append(el('b', '', data.company));
+    var who = el('span'); who.append((data.title || 'Migration Watch') + ' · '); who.append(el('b', '', data.company));
     var status = el('span', '', 'ready');
     head.append(who, status);
     var bar = el('div', 'bar'); bar.setAttribute('role', 'progressbar'); bar.setAttribute('aria-label', 'Projects moved');
