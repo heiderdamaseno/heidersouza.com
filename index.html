@@ -17,7 +17,7 @@
 "description":"Agile transformation, digitalization and migration for large enterprises: Jira, Azure DevOps, GitHub, SAP and mainframe.",
 "founder":{"@type":"Person","name":"Heider Souza","jobTitle":"Agile transformation and migration consultant","sameAs":["https://www.linkedin.com/in/heider-souza-65bba239/"],
 "hasCredential":["PMI-ACP","SAFe Program Consultant (SPC4)","SAFe 5 POPM","Jira Administrator"]},
-"knowsAbout":["Agile transformation","SAFe","Jira","Jira Cloud migration","Azure DevOps","GitHub","SAP","Mainframe","ServiceNow integration"],
+"knowsAbout":["Agile transformation","SAFe","Jira","Jira Cloud migration","Azure DevOps","GitHub","SAP","Mainframe","COBOL","JCL","CICS","Control-M","CA 7","CA ESP","ServiceNow integration"],
 "sameAs":["https://www.linkedin.com/in/heider-souza-65bba239/"]}
 </script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b6e55'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' text-anchor='middle' fill='white'%3EHS%3C/text%3E%3C/svg%3E">
@@ -119,13 +119,20 @@ section { padding-block: 64px; border-bottom: 1px solid var(--line); display: gr
 .trust div { display: grid; gap: 4px; }
 .trust p { color: var(--muted); font-size: 0.95rem; }
 
+.banner { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; margin-top: 16px; padding: 12px 16px; border: 1px solid var(--signal); border-radius: 6px; background: var(--surface); font-size: 0.95rem; }
+.banner b { font-family: var(--mono); font-weight: 500; color: var(--signal); }
+.offers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.offer { display: grid; gap: 6px; align-content: start; padding: 18px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); text-decoration: none; }
+.offer:hover { border-color: var(--accent); }
+.offer b { font-family: var(--display); font-size: 1.2rem; color: var(--accent); }
+.offer span:last-child { color: var(--muted); font-size: 0.95rem; }
 .contact { display: grid; gap: 16px; }
 .addr { font-family: var(--mono); font-size: 1.05rem; padding: 12px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; display: inline-flex; gap: 12px; align-items: center; flex-wrap: wrap; user-select: all; }
 .addr button { font: inherit; font-size: 0.85rem; border: 1px solid var(--accent); color: var(--accent); background: transparent; border-radius: 3px; padding: 4px 10px; cursor: pointer; user-select: none; }
 footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
 
 @media (max-width: 760px) {
-  .areas, .packages, .industries, .trust, .cases { grid-template-columns: minmax(0, 1fr); }
+  .areas, .packages, .industries, .trust, .cases, .offers { grid-template-columns: minmax(0, 1fr); }
   .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .intro { grid-template-columns: minmax(0, 1fr); gap: 20px; }
   .portrait { width: 160px; height: 200px; }
@@ -147,6 +154,7 @@ footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
       <a href="#contact">Contact</a>
     </nav>
   </header>
+  <a class="banner" href="/jira-cloud-migration/"><span><b>28 March 2029</b> Jira Data Center reaches end of life. Is your move planned?</span><span>Free readiness check →</span></a>
 
   <section class="hero">
     <span class="label">Agile transformation · Digitalization · Migration</span>
@@ -207,6 +215,11 @@ footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
         <p>Move and consolidate spaces, projects and tools: Jira Server and Data Center to Cloud, space mergers, and links between Jira, Azure DevOps, GitHub and ServiceNow.</p>
       </div>
     </div>
+    <div class="offers">
+      <a class="offer" href="/portfolio/"><span class="label">For leaders</span><b>Portfolio</b><span>Show what the IT budget delivers, on one page.</span></a>
+      <a class="offer" href="/jira-cloud-migration/"><span class="label">Deadline 2029</span><b>Jira Cloud migration</b><span>Move off Data Center without losing a project.</span></a>
+      <a class="offer" href="/mainframe-modernization/"><span class="label">Knowledge at risk</span><b>Mainframe modernization</b><span>Keep core systems running as experts retire.</span></a>
+    </div>
   </section>
 
   <section>
@@ -220,6 +233,9 @@ footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
       <span class="chip">SAP</span>
       <span class="chip">ServiceNow</span>
       <span class="chip">Mainframe (z/OS)</span>
+      <span class="chip">COBOL &amp; JCL</span>
+      <span class="chip">CICS</span>
+      <span class="chip">Control-M, CA 7, CA ESP</span>
     </div>
   </section>
 
