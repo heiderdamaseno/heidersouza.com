@@ -108,6 +108,10 @@ section { padding-block: 64px; border-bottom: 1px solid var(--line); display: gr
 .cases { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .case { background: var(--accent-soft); border-radius: 6px; padding: 22px; display: grid; gap: 8px; align-content: start; }
 .case p { font-size: 0.95rem; }
+.case dl { margin: 0; display: grid; gap: 4px; font-size: 0.95rem; }
+.case dt { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+.case dd { margin: 0; }
+.pkg-note { color: var(--muted); max-width: 70ch; margin: 0 0 20px; }
 .intro { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 32px; align-items: start; }
 .portrait { width: 200px; height: 250px; object-fit: cover; border-radius: 6px; border: 1px solid var(--line); display: block; }
 .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
@@ -169,7 +173,7 @@ footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
       <div class="stop"><div class="dot"></div><span>Cloud</span></div>
     </div>
     <div class="btns">
-      <a class="btn primary" href="#contact">Book a 30-minute call</a>
+      <a class="btn primary" href="mailto:heider@heidersouza.com?subject=30-minute%20call&amp;body=Hello%20Heider%2C%0A%0AWhat%20I%20want%20to%20change%20or%20move%3A%0A%0ATwo%20times%20that%20suit%20me%20(with%20time%20zone)%3A%0A1.%0A2.%0A">Book a 30-minute call</a>
       <a class="btn ghost" href="#packages">See packages</a>
     </div>
   </section>
@@ -256,6 +260,7 @@ footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
   <section id="packages">
     <span class="label">Packages</span>
     <h2>Smaller jobs, fixed scope and price</h2>
+    <p class="pkg-note">Every package gets a fixed price, written down before any work starts. It depends on the size of your setup, so we agree it after a free 30-minute call. You get the quote within two working days, and the price does not change unless you change the scope.</p>
     <div class="packages">
       <div class="pkg">
         <h3>Jira automation health check</h3>
@@ -288,19 +293,31 @@ footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
     <span class="label">Case stories</span>
     <div class="cases">
       <div class="case">
-        <span class="label">CA Technologies</span>
-        <h3>SAFe on the mainframe</h3>
-        <p>Guided the adoption of SAFe in a mainframe environment, improving innovation and time to market.</p>
+        <span class="label">Fortune 500 enterprise</span>
+        <h3>Jira at scale, with ServiceNow</h3>
+        <dl>
+          <dt>Problem</dt><dd>3,000+ Jira users whose work also had to show up in ServiceNow, kept in step by hand.</dd>
+          <dt>What I did</dt><dd>Designed the Jira structure and automation, set up two-way updates with ServiceNow, and built my own audit tooling.</dd>
+          <dt>Result</dt><dd>Routine admin work cut by more than half.</dd>
+        </dl>
       </div>
       <div class="case">
         <span class="label">Red Hat</span>
         <h3>Agile for certification courses</h3>
-        <p>Brought Agile ways of working, from scratch, to the teams building Red Hat's technical certification courses, such as Ansible. We grew from one team to 5+ teams and 100+ people, and from one project manager to 5+ project managers and Agile coaches. Along the way we built Red Hat's internal tools for developing courses.</p>
+        <dl>
+          <dt>Problem</dt><dd>The teams building Red Hat's technical certification courses, such as Ansible, had no Agile way of working.</dd>
+          <dt>What I did</dt><dd>Introduced Agile from scratch, coached the leads, and helped build Red Hat's internal tools for developing courses.</dd>
+          <dt>Result</dt><dd>Grew from 1 team to 5+ teams and 100+ people, and from 1 project manager to 5+ project managers and Agile coaches.</dd>
+        </dl>
       </div>
       <div class="case">
-        <span class="label">Fortune 500 enterprise</span>
-        <h3>Jira at scale, with ServiceNow</h3>
-        <p>Designed automation and structure for 3,000+ Jira users with two-way ServiceNow updates, and built my own tooling that cut routine admin work by more than half.</p>
+        <span class="label">CA Technologies</span>
+        <h3>SAFe on the mainframe</h3>
+        <dl>
+          <dt>Problem</dt><dd>Mainframe product teams needed to deliver faster.</dd>
+          <dt>What I did</dt><dd>Guided the adoption of SAFe in the mainframe environment, from inside the CA Scheduler and CA ESP team.</dd>
+          <dt>Result</dt><dd>Better time to market and more room for new features.</dd>
+        </dl>
       </div>
     </div>
   </section>
@@ -310,7 +327,7 @@ footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
     <h2>Your access, handled carefully</h2>
     <div class="trust">
       <div><h3>Least access</h3><p>I ask only for the permissions a task needs, and for as long as it needs them.</p></div>
-      <div><h3>Restore points</h3><p>Every change is backed up first and can be undone.</p></div>
+      <div><h3>Restore points</h3><p>Before a change, I take a backup or export and agree a tested way back with you. If a step cannot be reversed, such as some cloud migration steps, the plan says so before we start.</p></div>
       <div><h3>Your data stays yours</h3><p>Nothing is copied outside your systems unless you agree in writing.</p></div>
       <div><h3>Plain reporting</h3><p>You get a clear written record of what changed, when and why.</p></div>
     </div>
@@ -319,7 +336,8 @@ footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
   <section id="contact" class="contact">
     <span class="label">Contact</span>
     <h2>Start with a 30-minute call</h2>
-    <p>Tell me what you want to change or move. I will tell you honestly whether I can help and what it would take.</p>
+    <p>Tell me what you want to change or move, and two times that suit you. I reply within one working day to confirm a time, and I will tell you honestly whether I can help and what it would take.</p>
+    <p><a class="btn primary" href="mailto:heider@heidersouza.com?subject=30-minute%20call&amp;body=Hello%20Heider%2C%0A%0AWhat%20I%20want%20to%20change%20or%20move%3A%0A%0ATwo%20times%20that%20suit%20me%20(with%20time%20zone)%3A%0A1.%0A2.%0A">Book a 30-minute call</a></p>
     <div class="addr"><a id="mail" href="mailto:heider@heidersouza.com">heider@heidersouza.com</a><button id="copy" type="button">Copy</button></div>
   </section>
 
