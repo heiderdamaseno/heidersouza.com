@@ -101,19 +101,19 @@
 <script type="application/json" data-watch-for="watch-pf">
 {"title":"Portfolio Watch","company":"Northwind Retail (made-up)","note":"Replay with made-up company, epics and numbers.",
  "totals":{"projects":48},
- "counters":[{"key":"projects","label":"epics on track"},{"key":"spent","label":"k EUR spent this quarter"},{"key":"done","label":"business results reached"},{"key":"open","label":"decisions needed"}],
- "start":{"projects":39,"spent":2140,"done":6,"open":0},
+ "counters":[{"key":"projects","label":"epics on track"},{"key":"spent","label":"M USD spent this quarter"},{"key":"done","label":"business results reached"},{"key":"open","label":"decisions needed"}],
+ "start":{"projects":39,"spent":38,"done":6,"open":0},
  "stepMs":1300,"autoFixMs":9000,
  "events":[
   {"at":"Mon","text":"Portfolio data refreshed from Jira  48 epics  4 value streams"},
   {"at":"Mon","text":"Online shop  checkout redesign  result reached: conversion +3%","kind":"ok","set":{"done":7}},
   {"at":"Tue","text":"Epic CRM-Renewal  40% over budget  no business result linked","kind":"error","set":{"open":1,"projects":38},
    "fix":{"label":"Send to portfolio review","hint":"owner must show the expected result or stop","then":[
-     {"at":"Tue","text":"CRM-Renewal on Thursday's review  spending paused at 210k EUR","kind":"ok","set":{"open":0}}]}},
+     {"at":"Tue","text":"CRM-Renewal on Thursday's review  spending paused at 4.2M USD","kind":"ok","set":{"open":0}}]}},
   {"at":"Wed","text":"Supply chain  3 epics waiting on the same team for 6 weeks","kind":"error","set":{"open":1,"projects":35},
    "fix":{"label":"Move 2 epics to next quarter","hint":"free the team for the highest-value epic","then":[
      {"at":"Wed","text":"Team focused on Warehouse-Scan  2 epics moved to Q2","kind":"ok","set":{"open":0,"projects":37}}]}},
-  {"at":"Thu","text":"Portfolio review  45 minutes  4 decisions taken","set":{"spent":2310}},
+  {"at":"Thu","text":"Portfolio review  45 minutes  4 decisions taken","set":{"spent":41}},
   {"at":"Fri","text":"Board report generated  1 page  no spreadsheet","kind":"ok","set":{"projects":44,"done":8}}
  ]}
 </script>
