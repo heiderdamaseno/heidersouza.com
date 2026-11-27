@@ -133,6 +133,15 @@ section { padding-block: 64px; border-bottom: 1px solid var(--line); display: gr
 .addr button { font: inherit; font-size: 0.85rem; border: 1px solid var(--accent); color: var(--accent); background: transparent; border-radius: 3px; padding: 4px 10px; cursor: pointer; user-select: none; }
 footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
 
+/* Black band (#171717): header and hero, full width, with the green as main colour and amber as highlight. */
+header.top, .hero, .band {
+  --bg: #171717; --surface: #1f1f1f; --ink: #f2f4f3; --muted: #a8b3ae; --line: #2e2e2e;
+  --accent: #4cc39f; --accent-soft: #1d2a25; --signal: #e3a35c;
+  background: #171717; color: var(--ink);
+  box-shadow: 0 0 0 100vmax #171717; clip-path: inset(0 -100vmax);
+}
+header.top { border-bottom-color: transparent; }
+
 @media (max-width: 760px) {
   .areas, .packages, .industries, .trust, .cases, .offers { grid-template-columns: minmax(0, 1fr); }
   .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -330,7 +339,7 @@ footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
     </div>
   </section>
 
-  <section id="contact" class="contact">
+  <section id="contact" class="contact band">
     <span class="label">Contact</span>
     <h2>Start with a 30-minute call</h2>
     <p>Tell me what you want to change or move, and two times that suit you. I reply within one working day to confirm a time, and I will tell you honestly whether I can help and what it would take.</p>
@@ -338,7 +347,7 @@ footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
     <div class="addr"><a id="mail" href="mailto:heider@heidersouza.com">heider@heidersouza.com</a><button id="copy" type="button">Copy</button></div>
   </section>
 
-  <footer>© 2026 Heider Souza · <a href="https://www.linkedin.com/in/heider-souza-65bba239/" target="_blank" rel="noopener">LinkedIn</a></footer>
+  <footer class="band">© 2026 Heider Souza · <a href="https://www.linkedin.com/in/heider-souza-65bba239/" target="_blank" rel="noopener">LinkedIn</a></footer>
 </div>
 
 <script>

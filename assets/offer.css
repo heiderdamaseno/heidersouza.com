@@ -98,3 +98,12 @@ footer { padding-block: 32px; color: var(--muted); font-size: 0.85rem; }
   section { padding-block: 44px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .bar i { transition: none; } }
+
+/* Black band (#171717): header and hero on every offer page, full width, with the green as main colour and amber as highlight. */
+header.top, .hero, .band {
+  --bg: #171717; --surface: #1f1f1f; --ink: #f2f4f3; --muted: #a8b3ae; --line: #2e2e2e;
+  --accent: #4cc39f; --accent-soft: #1d2a25; --signal: #e3a35c; --good: #4cc39f; --bad: #f2867d;
+  background: #171717; color: var(--ink);
+  box-shadow: 0 0 0 100vmax #171717; clip-path: inset(0 -100vmax);
+}
+header.top { border-bottom-color: transparent; }
